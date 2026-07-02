@@ -1,0 +1,86 @@
+export const SALON = {
+  name: "Maison Salon",
+  tagline: "Beauty rooted in culture, crowned in confidence",
+  address: "42 Kloof Street, Cape Town 8001",
+  phone: "+27 62 668 5243",
+  whatsapp: "27626685243",
+  email: "hello@masonsalon.co.za",
+  hours: [
+    { day: "Monday", open: "09:00", close: "18:00", closed: false },
+    { day: "Tuesday", open: "09:00", close: "18:00", closed: false },
+    { day: "Wednesday", open: "09:00", close: "18:00", closed: false },
+    { day: "Thursday", open: "09:00", close: "20:00", closed: false },
+    { day: "Friday", open: "09:00", close: "20:00", closed: false },
+    { day: "Saturday", open: "09:00", close: "16:00", closed: false },
+    { day: "Sunday", open: "—", close: "—", closed: true },
+  ],
+};
+
+export const SERVICES = [
+  {
+    id: "cut-style",
+    category: "Hair",
+    name: "Heritage Cut & Shape",
+    duration: 60,
+    price: 650,
+    description: "A tailored cut inspired by natural textures, with wash, care, and styling finish.",
+  },
+  {
+    id: "colour",
+    category: "Hair",
+    name: "Sun-Kissed Balayage",
+    duration: 150,
+    price: 1850,
+    description: "Hand-painted highlights inspired by African sun tones with a rich custom gloss.",
+  },
+  {
+    id: "blowout",
+    category: "Hair",
+    name: "Natural Crown Blowout",
+    duration: 45,
+    price: 420,
+    description: "Volumising blow-dry designed for textured and relaxed hair with scalp care ritual.",
+  },
+  {
+    id: "bridal",
+    category: "Occasion",
+    name: "Royal Bridal Crown",
+    duration: 90,
+    price: 1250,
+    description: "Elegant upstyle inspired by African bridal beauty traditions with refined accessories.",
+  },
+  {
+    id: "mani",
+    category: "Nails",
+    name: "Gold Touch Manicure",
+    duration: 45,
+    price: 380,
+    description: "Nail shaping, cuticle care, and luxury finish inspired by earthy gold tones.",
+  },
+  {
+    id: "pedi",
+    category: "Nails",
+    name: "Earth Renewal Pedicure",
+    duration: 60,
+    price: 480,
+    description: "Deep care treatment with warm soak, exfoliation, and detailed nail finish.",
+  },
+  {
+    id: "facial",
+    category: "Skin",
+    name: "Baobab Glow Facial",
+    duration: 60,
+    price: 720,
+    description: "Botanical cleanse and hydrating mask inspired by African botanicals and wellness.",
+  },
+  {
+    id: "brows",
+    category: "Skin",
+    name: "Brow Sculpt Ritual",
+    duration: 30,
+    price: 220,
+    description: "Precision shaping and tinting for a naturally defined and balanced look.",
+  },
+];
+
+export type Service = (typeof SERVICES)[number];
