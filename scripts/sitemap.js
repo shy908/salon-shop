@@ -2,7 +2,7 @@ import { SitemapStream, streamToPromise } from "sitemap";
 import { createWriteStream } from "fs";
 
 const sitemap = new SitemapStream({
-  hostname: "https://your-domain.com",
+  hostname: "https://salon-shop-seven.vercel.app",
 });
 
 const routes = [
